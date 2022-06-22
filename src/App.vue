@@ -7,19 +7,22 @@ import Nav from './components/Nav.vue'
   <div id="app">
      <Nav />
      <router-view/>
-     <img src="./assets/skyline.svg" alt="">
+     <img src="/skyline.svg" alt="">
   </div>
 </template>
 
 <style>
 #app {
-  font-family: Volte, sans-serif;
   background: #13c6d6;
-  background-image: url(src/assets/clouds.svg);
+  background-image: url(/clouds.svg);
   background-repeat: no-repeat;
 }
 
 img{
   width:100%;
+}
+body{
+  font-family: Volte, sans-serif;
+  font-weight: 700;
 }
 </style>
