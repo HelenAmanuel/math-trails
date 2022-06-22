@@ -2,12 +2,12 @@
   <div class="main">
     <h1>Enjoy math everywhere!</h1>
     <a href="https://m.youtube.com/channel/UC5BIqP1YG8e7uMALndz5YTQ">
-        <img src="src/assets/home-child.svg" alt="intro video">
+        <img src="/home-child.svg" alt="intro video">
     </a>
     <button @click="searchTrails" type="submit" class="visit">Visit a Math Trail!</button>
     <div class="ad">
         <p>SPONSORED BY:</p>
-        <img  src="src/assets/ad.svg" alt="">
+        <img  src="/ad.svg" alt="">
     </div>
 
     <!-- <h1 class="mb-6 text-3xl font-extrabold">Mathhhhhy Home</h1>

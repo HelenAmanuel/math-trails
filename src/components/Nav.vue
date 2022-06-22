@@ -1,13 +1,13 @@
 <template>
   <div class="flex row">
     <a href="https://www.google.com">
-        <img  src="src/assets/menu.svg" alt="">
+        <img  src="/menu.svg" alt="">
     </a>
     <a href="/">
-        <img src="src/assets/logo.svg" alt="">
+        <img src="/logo.svg" alt="">
     </a>
     <a href="/about">
-        <img src="src/assets/user.svg" alt="">
+        <img src="/user.svg" alt="">
     </a>
   </div>
 </template>
