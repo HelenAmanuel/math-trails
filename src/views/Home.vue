@@ -4,7 +4,9 @@
     <a href="https://m.youtube.com/channel/UC5BIqP1YG8e7uMALndz5YTQ">
         <img src="/home-child.svg" alt="intro video">
     </a>
-    <button @click="searchTrails" type="submit" class="visit">Visit a Math Trail!</button>
+    <router-link to="/moses-trail">
+    <button type="submit" class="visit">Visit a Math Trail!</button>
+    </router-link>
     <div class="ad">
         <p>SPONSORED BY:</p>
         <img  src="/ad.svg" alt="">
@@ -24,9 +26,9 @@ import {useRouter} from 'vue-router'
 // const store = useStore()
 const router = useRouter()
 
-function searchTrails() {
-    location.replace("https://traillink.com")
-}
+// function searchTrails() {
+//     location.replace("https://traillink.com")
+// }
 // const name = computed(() => {
 //     return store.state.user.name
 // })
@@ -43,7 +45,7 @@ function searchTrails() {
 .main{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     margin: 0 auto;
     padding: 0 3rem;
 }

@@ -1,7 +1,10 @@
 <template>
-  <div class="flex row">
-    <a @click="openNav()">
-        <img  src="/menu.svg" alt="">
+  <div v-if="hasUserProfile" class="profile row">
+    <NavWithProfile/>
+  </div>
+  <div v-else class="no-profile">
+    <a class="menu" @click="openNav()">
+      <img src="/menu.svg" alt="">
     </a>
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" @click="closeNav()"><img src="/close-btn.svg" alt=""></a>
@@ -22,228 +25,49 @@
         </div>
         </div>
     </div>
-    <a href="/">
+    <a class="mt-logo" href="/">
         <img src="/logo.svg" alt="">
     </a>
-    <a href="#login" id="openPopUp">
-        <img src="/user.svg" alt="">
-    </a>
-    <aside id="login" class="popup">
-    <div class="loginContainer">
-      <div class="p-3">
-        <header>
-        <a href="#!" class="closePopUp"><img src="/close.svg" alt=""></a>
-        </header>
-        <img class="popup-logo" src="/logo-white.svg" alt="">
-         <p class="before">Before you proceed...</p>
-         <div class="login-btn">
-          <img src="/blue-user.svg" alt="">
-          <button >login</button>
-         </div>
-         <div class="signup-btn">
-           <img src="/plus-sign.svg" alt="">
-          <button>signup!</button>
-         </div>
-         <p>OR</p>
-      </div>
-         <div class="flex-continue">
-          <a href="">
-            <span class="continue">Continue without login</span>
-            <img src="/arrow-right.svg" alt="">
-          </a>
-         </div>
-    </div>        
-    <a href="#!" class="closePopUpOutSide"></a>    
-    </aside>
+    <div></div>
   </div>
 </template>
 
-<script setup>
-
-function openNav() {
+<script>
+import NavWithProfile from "./NavWithProfile.vue"
+export default{
+components: {NavWithProfile},
+methods:{
+  openNav() {
   document.getElementById("myNav").style.height = "100%";
-}
-
-function closeNav() {
+  },
+  closeNav() {
   document.getElementById("myNav").style.height = "0%";
+  }
+},
+data() {
+  return {
+    hasUserProfile: false
+    // bar: { name: "hi" }
+  }
 }
-
+}
 </script>
 
 <style>
-
-  .flex{
+  .no-profile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1.25rem 1rem;
   }
- /* Popup css */
-.popup{
-  position: fixed;
-  top: -100vh;
-  left: 0;
-  z-index: 9999999;
-  background: rgba(39, 3, 117, 0.711);
-  width: 100vw;
-  height: 100vh;
 
-    -webkit-transition: opacity  0.35s ease;
-    -moz-transition: opacity 0.35s ease;
-    -o-transition: opacity 0.35s ease;
-    transition: opacity 0.35s ease;
-}
-.popup .loginContainer{
-  width: 100%;
-  max-width: 31.25rem;
-  position: fixed; /* To avoid scroll to target */
-  left: 50%;
-  top: -100vh;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
+  /* .menu{
+    flex-grow: 1;
+  } */
 
-  /* Trick to properly center the element by using negative 
-  1/2 length of element as margin left and top */
-  margin-left: -250px;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-  border-radius: 1rem;
-  z-index: 9999999; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.popup h2{
-  padding: 0.5em;
-  text-align: center;
-  color: #444444;
-  margin: 0;
-}
-
-.popup p {
-  color: #3620A5;
-  font-size: 1.25rem;
-}
-
-.before{
-  padding: 2.125rem 0 0 0;
-}
-
-.popup-logo{
-  height: 5.5rem;
-}
-.popup a.closePopUp{
-  font-family: verdana;
-  color: #e74c3c;
-  position: absolute;
-  top: 0.2em;
-  right: 0.375em;
-  margin: 0;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-decoration: none;
-}
-.popup a:hover{
-  color: #c0392b;
-}
-.popup:target{
-  opacity: 1;
-  top: 0;
-}
-.popup .closePopUpOutSide{
-  position: absolute;
-  left:0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999991; 
-}
-.popup:target .loginContainer{
-  top: 50px;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
-}
-
-button,.signup-btn,.login-btn{
-    border-radius: .5rem;
-    font-weight: 700;
-    padding: 1.25rem 4.5rem;
-    color: white;
-    font-size: 1.25rem;
-    margin-top: .75rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup-btn{
-background: #FF960A;
-  display: flex;
-  flex-direction: row;
-white-space: nowrap;
-margin-bottom: 1.5rem;
-box-shadow: 0 .2rem .3rem #D37E0C;
-}
-
-.login-btn{
-  background: #6A3FD1;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0 .2rem .3rem #3620A5;
-}
-
-.login-btn img, .signup-btn img {
-  margin-right: .75rem;
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.flex-continue img {
-  margin-left: .75rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  display: inline;
-}
-.flex-continue{
-  font-size: 1.375rem;
-  display: flex;
-margin: 0 auto;
-  flex-direction: row;
-  color:#F46234;
-line-height: 26px;
-letter-spacing: -0.02em;
-}
-
-p .continue{
-  padding: 0;
-}
-
-@media  (max-width: 796px) {
-  .popup .loginContainer{
-    width: 90%;
-    max-width: none;
-    left: 5%;
-    margin-left: 0;
+  .mt-logo{
+    padding-right: 4rem;;
   }
-  .popup ul{
-    padding: 0 1em 0 1em;
-  }
-  .popup:target .loginContainer{
-    top: 8rem;
-    padding: 2.5rem;
-    -webkit-transition: top  0.35s ease;
-    -moz-transition: top 0.35s ease;
-    -o-transition: top 0.35s ease;
-    transition: top 0.35s ease;
-  }
-}
-
+ 
 /* menu popup */
 .overlay {
   height: 0%;
