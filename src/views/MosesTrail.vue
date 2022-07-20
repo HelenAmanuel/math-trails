@@ -9,7 +9,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus urna, congue in in aliquam facilisi tristique dignissim cras. Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum placerat convallis mauris. A in proin suspendisse pharetra.</p>    
     <div class="login-btn">
         <img  src="/union-arrow.svg" alt="">
-        <router-link to="/moses-trail/squirrel-brand">
+        <router-link to="/squirrel-brand">
         <button>Get Started</button>
         </router-link>
     </div>

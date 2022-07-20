@@ -2,7 +2,7 @@
   <div v-if="hasUserProfile" class="profile row">
     <NavWithProfile/>
   </div>
-  <div v-else class="no-profile">
+  <div v-else-if="hasMenu" class="no-profile">
     <a class="menu" @click="openNav()">
       <img src="/menu.svg" alt="">
     </a>
@@ -30,6 +30,11 @@
     </a>
     <div></div>
   </div>
+  <div v-else>
+    <a class="just-logo" href="/">
+      <img src="/logo.svg" alt="">
+    </a>
+  </div>
 </template>
 
 <script>
@@ -46,7 +51,8 @@ methods:{
 },
 data() {
   return {
-    hasUserProfile: false
+    hasUserProfile: false,
+    hasMenu: false
     // bar: { name: "hi" }
   }
 }
@@ -59,10 +65,6 @@ data() {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  /* .menu{
-    flex-grow: 1;
-  } */
 
   .mt-logo{
     padding-right: 4rem;;
@@ -132,6 +134,11 @@ data() {
 
 #myNav p{
   margin: 1.5rem 0;
+}
+
+.just-logo img{
+  height: 6rem;
+  margin-bottom: .875rem;
 }
 
 </style>
