@@ -1,68 +1,103 @@
 <template>
-  <div class="container">
-    <h1>Bob Moses Trail</h1>
-    <div>
-        <img src="/moses-trail-map.svg" alt="">
+    <div class="container">
+        <h1>Bob Moses Trail</h1>
+        <div>
+            <img src="/moses-trail-map.svg" alt="" />
+        </div>
+        <img class="sponsor" src="/kohl-museum.svg" alt="" />
+        <h2>About this trail:</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
+            urna, congue in in aliquam facilisi tristique dignissim cras. Mus
+            tortor, massa ipsum non commodo. Faucibus dolor ac bibendum placerat
+            convallis mauris. A in proin suspendisse pharetra.
+        </p>
+        <div class="login-btn">
+            <img src="/union-arrow.svg" alt="" />
+            <router-link to="/squirrel-brand">
+                <button>Get Started</button>
+            </router-link>
+        </div>
     </div>
-    <img class="sponsor" src="/kohl-museum.svg" alt="">
-    <h2>About this trail:</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus urna, congue in in aliquam facilisi tristique dignissim cras. Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum placerat convallis mauris. A in proin suspendisse pharetra.</p>    
-    <div class="login-btn">
-        <img  src="/union-arrow.svg" alt="">
-        <router-link to="/squirrel-brand">
-        <button>Get Started</button>
-        </router-link>
-    </div>
-  </div>
 </template>
 
 <script>
-import {useRouter} from 'vue-router'
+import { useRouter } from 'vue-router'
 
 const router = useRouter()
-
-
-
 </script>
 
 <style scoped>
-.container{
+@font-face {
+    font-family: 'Volte';
+    src: url('/fonts/volte/Volte-Light.eot');
+    src: local('Volte Light'), local('Volte-Light'),
+        url('/fonts/volte/Volte-Light.eot?#iefix')
+            format('embedded-opentype'),
+        url('/fonts/volte/Volte-Light.woff2') format('woff2'),
+        url('/fonts/volte/Volte-Light.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Volte-bold';
+    src: url('/fonts/volte/Volte-Bold.eot');
+    src: local('Volte Bold'), local('Volte-Bold'),
+        url('/fonts/volte/Volte-Bold.eot?#iefix')
+            format('embedded-opentype'),
+        url('/fonts/volte/Volte-Bold.woff2') format('woff2'),
+        url('/fonts/volte/Volte-Bold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+.container {
     background: white;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    padding: 1.25rem 1.063rem;
+    padding: 1.3125rem  1.0625rem 1.6875rem 1.0625rem;
     text-align: center;
+    max-width: 100%;
 }
-h1{
-    color: #F46234;
+h1 {
+    color: #f46234;
     font-size: 1.875rem;
     font-weight: 700;
+    font-family: Volte-bold;
     padding: 0 3.75rem 1.25rem 3.75rem;
 }
-
-.sponsor{
-    padding:1.875rem 8.125rem;
+h2 {
+    color: #f46234;
+    font-size: 1.5rem;
+    font-family: Volte-bold;
 }
 
-p{
-    font-weight: normal;
+.sponsor {
+    align-self: center;
+    margin: 1.125rem 0 2rem 0;
+    height: 4rem;
+    width:7.125rem;
+}
+
+p {
+    font-family: Volte;
     letter-spacing: -0.02em;
     font-size: 1rem;
     padding: 1rem 0;
 }
 
-.login-btn{
-  background: #6A3FD1;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0 .2rem .3rem #3620A5;
+.login-btn {
+    background: #6a3fd1;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0.2rem 0.3rem #3620a5;
 }
 
-.login-btn img, .signup-btn img {
-  margin-right: .75rem;
-  height: 1.5rem;
-  width: 1.5rem;
+.login-btn img,
+.signup-btn img {
+    margin-right: 0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
 }
-
 </style>

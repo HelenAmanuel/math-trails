@@ -22,7 +22,7 @@ img{
   width:100%;
 }
 body{
-  font-family: Volte, sans-serif;
+  font-family: "Volte-bold";
   font-weight: 700;
 }
 </style>
