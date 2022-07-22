@@ -11,7 +11,7 @@
             <h4>Experiences at this location:</h4>
             <h2>Squirrel Hop</h2>
             <img src="/playground.svg" alt="" />
-            <p>
+            <p class="blurb">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                 urna, congue in in aliquam facilisi tristique dignissim cras.
                 Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum
@@ -44,7 +44,7 @@
             </GameCard>
             <h2>Candy Circles</h2>
             <img src="/playground.svg" alt="" />
-            <p>
+            <p class="blurb">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
                 urna, congue in in aliquam facilisi tristique dignissim cras.
                 Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum
@@ -72,39 +72,6 @@
                 </template>
             </GameCard>
         </div>
-
-        <!-- <div>
-        <div>
-         <p>Explore the AR game</p>
-         <img src="" alt=""> 
-        </div>
-        <div>
-         <img src="" alt="">
-         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
-        </div>
-        <div>
-            <img src="" alt="">
-            <span>Play Now</span>
-        </div>
-    </div>
-
-     <h2>Candy Circles</h2>
-    <img src="" alt="">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus urna, congue in in aliquam facilisi tristique dignissim cras. Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum placerat convallis mauris. A in proin suspendisse pharetra.</p>    
-    <div>
-        <div>
-         <p>Explore the AR game</p>
-         <img src="" alt=""> 
-        </div>
-        <div>
-         <img src="" alt="">
-         <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</span>
-        </div>
-        <div>
-            <img src="" alt="">
-            <span>Play Now</span>
-        </div>
-    </div> -->
     </div>
 </template>
 
@@ -251,6 +218,13 @@ h2 {
     }
     .card-component p {
     padding-top: 2rem;
+}
+.experiences h4{
+    font-size: 2.5rem;
+}
+.blurb{
+    font-size: 1.5rem;
+    padding: 1.75rem 0;
 }
 }
 </style>

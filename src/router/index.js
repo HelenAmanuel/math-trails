@@ -3,6 +3,7 @@ import About from '../views/About.vue'
 import SquirrelBrand from '../views/SquirrelBrand.vue'
 import MosesTrail from '../views/MosesTrail.vue'
 import MoreGames from '../views/MoreGames.vue'
+import MeasureEverything from '../views/MeasureEverything.vue'
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path:'/more-games',
         name: 'MoreGames',
         component: MoreGames,
+    },
+    {
+        path:'/measure-everything',
+        name: 'MeasureEverything',
+        component: MeasureEverything,
     }
 ]
 
