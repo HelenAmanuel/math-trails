@@ -27,7 +27,7 @@
         <h3>Download Now!</h3>
         <div class="flex-row">
             <img src="/apple-play.svg" alt="" />
-            <img src="google-play.svg" alt="" />
+            <img src="/google-play.svg" alt="" />
         </div>
     </div>
 </template>
