@@ -84,10 +84,12 @@ export default {}
 .main {
     width: 100%;
     background-color: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 .more-games {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 91.7%;
     align-items: center;
     text-align: center;
@@ -135,6 +137,9 @@ export default {}
 }
 
 @media (min-width: 34rem) and (max-width: 59.375rem) {
+.more-games{
+    font-size: 3.5rem;
+}
 
 .card-text {
     font-weight: 500;
