@@ -72,15 +72,27 @@
                 </template>
             </GameCard>
         </div>
+        <router-link class="more" to="/more-games"> 
+            <p>-for viewing purposes only-</p>
+            <p>More Games ->
+            </p>
+        </router-link>
+        <router-link class="more" to="/measure-everything">
+            <p>
+                Measure Everything
+            </p>
+        </router-link>
     </div>
 </template>
 
 <script>
 import GameCard from '../components/GameCard.vue'
+import { useRouter } from 'vue-router'
+const router = useRouter()
 export default {
     components: {
         GameCard,
-    },
+    }
 }
 </script>
 
@@ -196,6 +208,11 @@ h2 {
 .flex-row {
     display: flex;
     flex-direction: row;
+}
+.more{
+    color: #3620a5;
+    text-align: right;
+    padding: 0;
 }
 @media (min-width: 34rem) and (max-width: 59.375rem) {
     .card-text {
