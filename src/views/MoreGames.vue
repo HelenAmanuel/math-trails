@@ -39,7 +39,7 @@
         </div>
         <div class="grey section">
             <div class="card">
-                <img src="teddy-roundup.svg" alt="" />
+                <img src="/teddy-roundup.svg" alt="" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor. Mus tortor, massa ipsum non commodo.
@@ -57,7 +57,7 @@
         </div>
         <div class="white section">
             <div class="card">
-                <img src="whole-icon.svg" alt="" />
+                <img src="/whole-icon.svg" alt="" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor. Mus tortor, massa ipsum non commodo.
