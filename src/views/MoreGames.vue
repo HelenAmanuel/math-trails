@@ -3,7 +3,7 @@
         <p class="more-games">More Games:</p>
         <div class="grey section">
             <div class="card">
-                <img src="teddy-hop-icon.svg" alt="" />
+                <img src="/teddy-hop-icon.svg" alt="" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor. Mus tortor, massa ipsum non commodo.
