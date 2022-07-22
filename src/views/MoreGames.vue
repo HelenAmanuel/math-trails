@@ -146,11 +146,6 @@ export default {}
     font-size: 2rem;
 }
 
-.game-section a{
-    display: flex;
-    flex-direction: flex-end;
-}
-
 .card p{
     font-size: 2rem;
     padding:2rem;

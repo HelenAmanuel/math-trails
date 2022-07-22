@@ -19,8 +19,12 @@
             </p>
             <GameCard class="card-component">
                 <template v-slot:game-desc>
-                    <div class="flex row">
-                        <img class="game-icon" src="/teddy-hop-icon.svg" alt="" />
+                    <div class="flex row pt-0 pb-0">
+                        <img
+                            class="game-icon"
+                            src="/teddy-hop-icon.svg"
+                            alt=""
+                        />
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor.
@@ -28,12 +32,14 @@
                     </div>
                     <div class="flex row games">
                         <div></div>
-                        <a href="https://mathtalk.8thwall.app/teddy-onboarding/" class="play flex row">
-                            <img src="/triangle.svg" alt="">
+                        <a
+                            href="https://mathtalk.8thwall.app/teddy-onboarding/"
+                            class="play flex row"
+                        >
+                            <img src="/triangle.svg" alt="" />
                             <span>Play Now</span>
                         </a>
                     </div>
-
                 </template>
             </GameCard>
             <h2>Candy Circles</h2>
@@ -46,8 +52,8 @@
             </p>
             <GameCard class="card-component">
                 <template v-slot:game-desc>
-                    <div class="flex row">
-                        <img  class="game-icon" src="/circle-candy.svg" alt="" />
+                    <div class="flex row pt-0 pb-0">
+                        <img class="game-icon" src="/circle-candy.svg" alt="" />
                         <p class="card-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor.
@@ -55,8 +61,11 @@
                     </div>
                     <div class="flex row games">
                         <div></div>
-                        <a href="https://mathtalk.8thwall.app/kohl-venn/" class="play flex row">
-                            <img src="/triangle.svg" alt="">
+                        <a
+                            href="https://mathtalk.8thwall.app/kohl-venn/"
+                            class="play flex row"
+                        >
+                            <img src="/triangle.svg" alt="" />
                             <span>Play Now</span>
                         </a>
                     </div>
@@ -175,15 +184,18 @@ h2 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 108.1%;
+    text-align: left;
 }
-.games{
+.games {
     flex-direction: space-between;
     padding: 0;
 }
 .card-component img {
-    width: 5.8125rem;
-    height: 3.4375rem;
-    margin: 1.8125rem 1.25rem 4.125rem 1.25rem;
+    margin: 1.8125rem 1.25rem 2.125rem 1.25rem;
+}
+.card-component p {
+    padding-bottom: 0;
+    padding-top: 1.2rem;
 }
 .login-btn img,
 .signup-btn img {
@@ -191,53 +203,54 @@ h2 {
     height: 1.5rem;
     width: 1.5rem;
 }
-.play span{
-    color: #3620A5;
+.play span {
+    color: #3620a5;
     font-size: 1.125rem;
     font-weight: 700;
     line-height: 94.1%;
 }
-.play{
-    background-color: #FF960A;
+.play {
+    background-color: #ff960a;
     margin: 0 0 0 12.5rem;
     align-items: center;
     padding: 0;
     height: 2.625rem;
-    width:8.875rem;
+    width: 8.875rem;
     justify-content: center;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     flex-direction: flex-end;
 }
-.play img{
+.play img {
     width: 1rem;
     height: 1rem;
-    margin: 0 .5rem 0 0;
+    margin: 0 0.5rem 0 0;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 @media (min-width: 34rem) and (max-width: 59.375rem) {
-
-.card-text {
-    font-weight: 500;
-    font-size: 2rem;
+    .card-text {
+        font-weight: 500;
+        font-size: 2rem;
+        text-align: left;
+    }
+    .play {
+        height: 4.625rem;
+        display: flex;
+        width: 18.875rem;
+        padding: 0;
+        margin-right: 0;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .card-component p {
+    padding-top: 2rem;
 }
-
-.game-section a{
-    display: flex;
-    flex-direction: flex-end;
-}
-.play{
-    height: 4.625rem;
-    display: flex;
-    width:18.875rem;
-    padding: 0;
-    margin-right: 0;
-}
-h1{
-    font-size: 3.5rem;
-}
-h3{
-    font-size: 2rem;;
-}
-
 }
 </style>

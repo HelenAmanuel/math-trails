@@ -6,7 +6,7 @@
                 <img src="/game-icon.svg" alt="" />
             </div>
         </div>
-        <div class="game-section">
+        <div>
             <slot name="game-desc"></slot>
         </div>
     </div>
