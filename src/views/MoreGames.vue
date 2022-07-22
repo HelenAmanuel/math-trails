@@ -21,7 +21,7 @@
         </div>
         <div class="white section">
             <div class="card">
-                <img src="circle-candy.svg" alt="" />
+                <img src="/circle-candy.svg" alt="" />
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor. Mus tortor, massa ipsum non commodo.
