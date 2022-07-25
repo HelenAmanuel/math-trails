@@ -76,8 +76,6 @@
                 </template>
             </GameCard>
             <router-link class="more" to="/more-games">
-        <router-link class="more" to="/more-games"> 
-            <router-link class="more" to="/more-games">
                 <span>More Games</span>
                 <img src="/triangle.svg" alt="" />
             </router-link>
@@ -212,7 +210,7 @@ h2 {
 .more {
     color: #3620a5;
     padding: 0;
-    font-family: "Volte-bold";
+    font-family: 'Volte-bold';
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
@@ -220,12 +218,11 @@ h2 {
     justify-content: flex-end;
     align-items: center;
     margin: 1.5rem 0 0 0;
-
 }
 .more img {
     width: 1.5rem;
     height: 1.5rem;
-    padding: 0 0 0 .5rem;
+    padding: 0 0 0 0.5rem;
 }
 @media (min-width: 34rem) and (max-width: 59.375rem) {
     .card-text {
