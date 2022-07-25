@@ -11,34 +11,10 @@
             <p>SPONSORED BY:</p>
             <img src="/ad.svg" alt="" />
         </div>
-
-        <!-- <h1 class="mb-6 text-3xl font-extrabold">Mathhhhhy Home</h1>
-    <h2>Arthur's friends name is {{name}}</h2>
-    <input v-model="newName" class="p-4 border border-red-600" type="text" name="" id="">
-    <button @click="saveName" class="p-2 text-white bg-indigo-600 rounded ml-4">Submit</button> -->
     </div>
 </template>
 
-<script setup>
-// import {computed, ref} from 'vue'
-// import {useStore} from 'vuex'
-import { useRouter } from 'vue-router'
-// const store = useStore()
-const router = useRouter()
-
-// function searchTrails() {
-//     location.replace("https://traillink.com")
-// }
-// const name = computed(() => {
-//     return store.state.user.name
-// })
-
-// const newName = ref('')
-// function saveName() {
-//     store.dispatch('saveName', newName.value)
-//     newName.value = ''
-//     router.push("/about")
-// }
+<script>
 </script>
 
 <style>

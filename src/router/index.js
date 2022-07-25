@@ -8,7 +8,7 @@ import MeasureEverything from '../views/MeasureEverything.vue'
 const routes = [
     {
         path:'/',
-        name: 'Home',
+        name: 'MosesTrail',
         component: MosesTrail,
     },
     {

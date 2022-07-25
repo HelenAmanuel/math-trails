@@ -78,7 +78,9 @@ Players control the size of a teddy bear's hops as they guide it back and forth 
 </template>
 
 <script>
-export default {}
+export default {
+    name: "MoreGames"
+}
 </script>
 
 <style>

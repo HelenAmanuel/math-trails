@@ -75,22 +75,27 @@
                     </div>
                 </template>
             </GameCard>
-            <router-link class="more" to="/more-games">
+            <a @click="seeMoreGames()" class="more">
                 <span>More Games</span>
                 <img src="/triangle.svg" alt="" />
-            </router-link>
+            </a>
         </div>
     </div>
 </template>
 
 <script>
 import GameCard from '../components/GameCard.vue'
-import { useRouter } from 'vue-router'
-const router = useRouter()
+
 export default {
+    name: "SquirrelBrand", 
     components: {
         GameCard,
     },
+    methods: {
+        seeMoreGames(){
+            this.$router.push("/more-games")
+        }
+    }
 }
 </script>
 

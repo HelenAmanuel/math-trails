@@ -33,7 +33,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+    name: "MeasureEverything"
+}
 </script>
 
 <style scoped>
