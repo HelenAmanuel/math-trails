@@ -5,8 +5,7 @@
             <div class="card">
                 <img src="/teddy-hop-icon.svg" alt="" />
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor. Mus tortor, massa ipsum non commodo.
+Players control the size of a teddy bear's hops as they guide it back and forth along a number line. Can they determine how far to hop to collect prizes without being swallowed by a traveling hole?
                 </p>
             </div>
             <div class="bottom-section">
@@ -23,8 +22,10 @@
             <div class="card">
                 <img src="/circle-candy.svg" alt="" />
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor. Mus tortor, massa ipsum non commodo.
+                    MathTrail-blazers will delight in Candy Circles, which
+                    displays circles of varying sizes and designs! This
+                    installation lends itself to rich conversations around
+                    shapes, describing attributes, and critical thinking.
                 </p>
             </div>
             <div class="bottom-section">
@@ -124,7 +125,7 @@ export default {}
 .grey {
     background-color: #f2f2f2;
 }
-.white{
+.white {
     background-color: white;
 }
 .section {
@@ -137,25 +138,24 @@ export default {}
 }
 
 @media (min-width: 34rem) and (max-width: 59.375rem) {
-.more-games{
-    font-size: 3.5rem;
-}
+    .more-games {
+        font-size: 3.5rem;
+    }
 
-.card-text {
-    font-weight: 500;
-    font-size: 2rem;
-}
+    .card-text {
+        font-weight: 500;
+        font-size: 2rem;
+    }
 
-.card p{
-    font-size: 2rem;
-    padding:2rem;
-}
-.bottom-section{
-    padding-left: 15rem;
-}
-.bottom-section .play-card{
-    font-size: 1.5rem;
-}
-
+    .card p {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .bottom-section {
+        padding-left: 15rem;
+    }
+    .bottom-section .play-card {
+        font-size: 1.5rem;
+    }
 }
 </style>

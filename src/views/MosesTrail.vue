@@ -2,15 +2,19 @@
     <div class="container">
         <h1>Bob Moses Trail</h1>
         <div>
-            <img src="/moses-trail-map.svg" alt="" />
+            <img src="/moses-trail-map-old.svg" alt="" />
         </div>
         <img class="sponsor" src="/kohl-museum.svg" alt="" />
         <h2>About this trail:</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-            urna, congue in in aliquam facilisi tristique dignissim cras. Mus
-            tortor, massa ipsum non commodo. Faucibus dolor ac bibendum placerat
-            convallis mauris. A in proin suspendisse pharetra.
+            The Bob Moses MathTrail is named after Robert Moses, a
+            Cambridge-based educator and civil rights activist who considered
+            math literacy a civil right and founded The Algebra Project, a
+            nonprofit organization dedicated to helping students from
+            historically marginalized communities develop math literacy. The
+            goal of this mile-long path in The Port neighborhood is to encourage
+            Cambridge residents, especially children and families, to find the
+            fun in math and explore math in the world around them.
         </p>
         <div class="login-btn">
             <img src="/union-arrow.svg" alt="" />
@@ -32,8 +36,7 @@ const router = useRouter()
     font-family: 'Volte';
     src: url('/fonts/volte/Volte-Light.eot');
     src: local('Volte Light'), local('Volte-Light'),
-        url('/fonts/volte/Volte-Light.eot?#iefix')
-            format('embedded-opentype'),
+        url('/fonts/volte/Volte-Light.eot?#iefix') format('embedded-opentype'),
         url('/fonts/volte/Volte-Light.woff2') format('woff2'),
         url('/fonts/volte/Volte-Light.woff') format('woff');
     font-weight: 500;
@@ -44,8 +47,7 @@ const router = useRouter()
     font-family: 'Volte-bold';
     src: url('/fonts/volte/Volte-Bold.eot');
     src: local('Volte Bold'), local('Volte-Bold'),
-        url('/fonts/volte/Volte-Bold.eot?#iefix')
-            format('embedded-opentype'),
+        url('/fonts/volte/Volte-Bold.eot?#iefix') format('embedded-opentype'),
         url('/fonts/volte/Volte-Bold.woff2') format('woff2'),
         url('/fonts/volte/Volte-Bold.woff') format('woff');
     font-weight: 300;
@@ -56,7 +58,7 @@ const router = useRouter()
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    padding: 1.3125rem  1.0625rem 1.6875rem 1.0625rem;
+    padding: 1.3125rem 1.0625rem 1.6875rem 1.0625rem;
     text-align: center;
     max-width: 100%;
 }
@@ -77,7 +79,7 @@ h2 {
     align-self: center;
     margin: 1.125rem 0 2rem 0;
     height: 4rem;
-    width:7.125rem;
+    width: 7.125rem;
 }
 
 p {
@@ -99,5 +101,25 @@ p {
     margin-right: 0.75rem;
     height: 1.5rem;
     width: 1.5rem;
+}
+
+@media (min-width: 34rem) and (max-width: 59.375rem) {
+h1 {
+    font-size: 2.75rem;
+    padding: 0 3.75rem 1.25rem 3.75rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.sponsor{
+    margin-top: 0;
+}
+.login-btn {
+    font-size: 1.75rem;
+}
 }
 </style>

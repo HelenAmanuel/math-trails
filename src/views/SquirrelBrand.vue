@@ -4,7 +4,7 @@
             <h3>Bob Moses Trail</h3>
             <h1>Squirrel Brand Park</h1>
             <div>
-                <img src="/squirrel-map.svg" alt="" />
+                <img src="/squirrel-map-old.svg" alt="" />
             </div>
         </div>
         <div class="experiences">
@@ -12,10 +12,9 @@
             <h2>Squirrel Hop</h2>
             <img src="/playground.svg" alt="" />
             <p class="blurb">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-                urna, congue in in aliquam facilisi tristique dignissim cras.
-                Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum
-                placerat convallis mauris. A in proin suspendisse pharetra.
+                Squirrel Hop shows a series of shapes and arcs representing the
+                distance of hopping animals, getting kids moving while thinking
+                about spatial relationships and measurement!
             </p>
             <GameCard class="card-component">
                 <template v-slot:game-desc>
@@ -26,8 +25,10 @@
                             alt=""
                         />
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor.
+                            Squirrel Hop shows a series of shapes and arcs
+                            representing the distance of hopping animals,
+                            getting kids moving while thinking about spatial
+                            relationships and measurement!
                         </p>
                     </div>
                     <div class="flex row games">
@@ -45,18 +46,21 @@
             <h2>Candy Circles</h2>
             <img src="/playground.svg" alt="" />
             <p class="blurb">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus
-                urna, congue in in aliquam facilisi tristique dignissim cras.
-                Mus tortor, massa ipsum non commodo. Faucibus dolor ac bibendum
-                placerat convallis mauris. A in proin suspendisse pharetra.
+                MathTrai-lblazers will delight in Candy Circles, which displays
+                circles of varying sizes and designs! This installation lends
+                itself to rich conversations around shapes, describing
+                attributes, and critical thinking.
             </p>
             <GameCard class="card-component">
                 <template v-slot:game-desc>
                     <div class="flex row pt-0 pb-0">
                         <img class="game-icon" src="/circle-candy.svg" alt="" />
                         <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor.
+                            MathTrai-lblazers will delight in Candy Circles,
+                            which displays circles of varying sizes and designs!
+                            This installation lends itself to rich conversations
+                            around shapes, describing attributes, and critical
+                            thinking.
                         </p>
                     </div>
                     <div class="flex row games">
@@ -71,17 +75,13 @@
                     </div>
                 </template>
             </GameCard>
-        </div>
+            <router-link class="more" to="/more-games">
         <router-link class="more" to="/more-games"> 
-            <p>-for viewing purposes only-</p>
-            <p>More Games ->
-            </p>
-        </router-link>
-        <router-link class="more" to="/measure-everything">
-            <p>
-                Measure Everything
-            </p>
-        </router-link>
+            <router-link class="more" to="/more-games">
+                <span>More Games</span>
+                <img src="/triangle.svg" alt="" />
+            </router-link>
+        </div>
     </div>
 </template>
 
@@ -92,7 +92,7 @@ const router = useRouter()
 export default {
     components: {
         GameCard,
-    }
+    },
 }
 </script>
 
@@ -209,10 +209,23 @@ h2 {
     display: flex;
     flex-direction: row;
 }
-.more{
+.more {
     color: #3620a5;
-    text-align: right;
     padding: 0;
+    font-family: "Volte-bold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1.5rem 0 0 0;
+
+}
+.more img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0 0 .5rem;
 }
 @media (min-width: 34rem) and (max-width: 59.375rem) {
     .card-text {
@@ -234,14 +247,14 @@ h2 {
         font-size: 2rem;
     }
     .card-component p {
-    padding-top: 2rem;
-}
-.experiences h4{
-    font-size: 2.5rem;
-}
-.blurb{
-    font-size: 1.5rem;
-    padding: 1.75rem 0;
-}
+        padding-top: 2rem;
+    }
+    .experiences h4 {
+        font-size: 2.5rem;
+    }
+    .blurb {
+        font-size: 1.5rem;
+        padding: 1.75rem 0;
+    }
 }
 </style>
