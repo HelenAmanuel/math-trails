@@ -41,6 +41,9 @@ export default {
 <style scoped>
 .main {
     display: flex;
+    background: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     flex-direction: column;
     width: 100%;
     text-align: center;

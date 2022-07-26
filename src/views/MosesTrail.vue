@@ -38,22 +38,20 @@ export default {
 <style scoped>
 @font-face {
     font-family: 'Volte';
-    src: url('/fonts/volte/Volte-Light.eot');
+    src: url('/Volte-Light.eot');
     src: local('Volte Light'), local('Volte-Light'),
-        url('/fonts/volte/Volte-Light.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/volte/Volte-Light.woff2') format('woff2'),
-        url('/fonts/volte/Volte-Light.woff') format('woff');
+        url('/Volte-Light.eot?#iefix') format('embedded-opentype'),
+        url('/Volte-Light.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Volte-bold';
-    src: url('/fonts/volte/Volte-Bold.eot');
+    src: url('/Volte-Bold.eot');
     src: local('Volte Bold'), local('Volte-Bold'),
-        url('/fonts/volte/Volte-Bold.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/volte/Volte-Bold.woff2') format('woff2'),
-        url('/fonts/volte/Volte-Bold.woff') format('woff');
+        url('/Volte-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/Volte-Bold.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }

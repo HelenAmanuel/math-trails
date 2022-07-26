@@ -56,7 +56,7 @@
                     <div class="flex row pt-0 pb-0">
                         <img class="game-icon" src="/circle-candy.svg" alt="" />
                         <p class="card-text">
-                            MathTrai-lblazers will delight in Candy Circles,
+                            MathTrail-blazers will delight in Candy Circles,
                             which displays circles of varying sizes and designs!
                             This installation lends itself to rich conversations
                             around shapes, describing attributes, and critical
