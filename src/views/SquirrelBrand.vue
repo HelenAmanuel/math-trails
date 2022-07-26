@@ -87,15 +87,20 @@
 import GameCard from '../components/GameCard.vue'
 
 export default {
-    name: "SquirrelBrand", 
+    name: 'SquirrelBrand',
     components: {
         GameCard,
     },
     methods: {
-        seeMoreGames(){
-            this.$router.push("/more-games")
-        }
-    }
+        seeMoreGames() {
+            this.$router.push('/more-games')
+        },
+    },
+    computed: {
+        routeName() {
+            return this.$route.name
+        },
+    },
 }
 </script>
 

@@ -1,38 +1,40 @@
 import {createRouter, createWebHistory} from 'vue-router'
-// import About from '../views/About.vue'
-// import SquirrelBrand from '../views/SquirrelBrand.vue'
-// import MosesTrail from '../views/MosesTrail.vue'
-// import MoreGames from '../views/MoreGames.vue'
-// import MeasureEverything from '../views/MeasureEverything.vue'
+import About from '../views/About.vue'
+import SquirrelBrand from '../views/SquirrelBrand.vue'
+import MosesTrail from '../views/MosesTrail.vue'
+import MoreGames from '../views/MoreGames.vue'
+import MeasureEverything from '../views/MeasureEverything.vue'
 
 const routes = [
     {
         path:'/',
         name: 'MosesTrail',
-        component: () => import('../views/MosesTrail.vue')
+        component: MosesTrail,
+        // component: () => import('../views/MosesTrail.vue')
     },
     {
         path:'/about',
         name: 'About',
-        component: () => import('../views/About.vue')
-        // component: About,
+        // component: () => import('../views/About.vue')
+        component: About
     },
     {
         path:'/squirrel-brand',
         name: 'SquirrelBrand',
-        component: () => import('../views/SquirrelBrand.vue')
-        // component: SquirrelBrand,
+        // component: () => import('../views/SquirrelBrand.vue')
+        component: SquirrelBrand
     },
     {
         path:'/more-games',
         name: 'MoreGames',
-        component: () => import('../views/MoreGames.vue')
+        component: MoreGames
+        // component: () => import('../views/MoreGames.vue')
     },
     {
         path:'/measure-everything',
         name: 'MeasureEverything',
-        component: () => import('../views/MeasureEverything.vue')
-        // component: MeasureEverything,
+        // component: () => import('../views/MeasureEverything.vue')
+        component: MeasureEverything
     }
 ]
 
